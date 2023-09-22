@@ -1,0 +1,12 @@
+{%extends 'home.html'%}
+{% block content %}
+<form action="" method="post">
+    {%csrf_token%}
+    {{form}}
+   <button class="btn btn-primary">sign in</button>
+</form>
+
+
+
+{% endblock content %}
+

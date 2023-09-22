@@ -1,0 +1,276 @@
+{% extends 'navbar.html' %}
+{% block nav %}
+<!-- <h1 style="text-align: center; color:  rgb(2, 63, 112);">PERIODIC SERVICE</h1> -->
+
+<div style="height: 500px; background-color: white;">
+  <h1
+    style="font-size:60px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 170px; margin-left: 100px;">
+    Amazing deals for <br> doorstep car servicing <br> now at your fingertips.</h1><br> <a href="" style="margin-left: 285px; margin-top: 0px; width: 180px; height: 40px;" class="btn btn-success" >Proceed to Book</a>
+    
+
+    
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <span class="material-symbols-outlined">
+      Book Now
+    </span>
+  </button>
+
+
+
+</div>
+
+
+</div>
+<div style="background-color: rgba(195, 37, 230, 0.361);" class="modal fade" id="exampleModal" tabindex="-1"
+  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div style="background-color: rgba(195, 37, 230, 0.361);" class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+        <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div style="background-color: rgba(195, 37, 230, 0.361);" class="modal-body">
+        <form action="" method="post">
+          {% csrf_token %}
+          <label for="">Name</label>
+          <input name="nme" type="text"><br>
+          <label for="">Phone</label>
+          <input name="phn" type="number"><br>
+          <label for="">Select Date</label>
+          <input name="dt" type="date"><br>
+
+          Select Time Slot<select name="ts" id="time-slot"><br>
+            <option value="8:00 am - 10:00 am">8:00 am - 10:00 am</option>
+            <option value="10:00 am - 12:00 pm">10:00 am - 12:00 pm</option>
+            <option value="12:00 pm - 2:00 pm">12:00 pm - 2:00 pm</option>
+            <option value="3:00 pm - 5:00 pm">3:00 pm - 5:00 pm</option>
+            <option value="5:00 pm - 7:00 pm">5:00 pm - 7:00 pm</option>
+          </select><br>
+          <br><label for="">Select Fuel_type</label>
+          <input name="ftype" type="text" placeholder="Petrol/Deisel"><br>
+         
+          <label for="">Address</label>
+          <input type="text" name="add"><br>
+
+
+
+
+           <br><div class="text-center"><button class="bt btn-success">Submit</button></div>
+        </form>
+        <div style="background-color: rgba(195, 37, 230, 0.361);" class="modal-footer">
+          <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button> -->
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+  </div>
+  <div>
+  </div>
+</div>
+
+<div>
+  <img style="height: 520px; width: 500px; margin-top: -360px; margin-left: 1000px;"
+    src="../static/images/periodic img.jpg" alt="">
+</div><br><br><br><br><br><br>
+<hr>
+
+<div>
+  <strong>
+    <h1
+      style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; ">
+      From Boot to Bumper</h1>
+  </strong><br>
+  <h3 style="text-align: center;">Experience the ease of doorstep car servicing with best partners in the
+    industry,<br> discover all your car servicing needs on the GarageH app.</h3>
+</div><br><br><br>
+<div>
+  <div>
+    <img style="height: 300px; width: 300px; margin-top: 50px; margin-left: 130px;"
+      src="../static/images/periodic 1 logo.png" alt="">
+    <h5 style="margin-left: 250px; margin-top: -15px;">periodic <br>service</h5>
+  </div>
+
+  <div>
+    <img style="height: 250px; width: 290px; margin-top: -360px; margin-left: 495px;"
+      src="../static/images/periodic 2 logo.png" alt="">
+    <h5 style="margin-left: 570px; margin-top: -85px;">3M Dashboard <br>Dresser</h5>
+  </div>
+
+  <div>
+    <img style="height: 280px; width: 300px; margin-top: -400px; margin-left: 800px;"
+      src="../static/images/periodic 3 logo.png" alt="">
+    <h5 style="margin-left: 900px; margin-top: -95px;">Inspection <br>& Diagnostics</h5>
+  </div>
+
+  <div>
+    <img style="height: 280px; width: 290px; margin-top: -415px; margin-left: 1120px;"
+      src="../static/images/periodic 4 logo.png" alt="">
+    <h5 style="margin-left: 1240px; margin-top: -105px;"> AC<br>
+      Services</h5>
+  </div>
+</div><br><br><br><br><br>
+<hr>
+
+<div style="height: 1150px;">
+  <div>
+    <strong>
+      <h1
+        style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; ">
+        Services at Your Convenience</h1>
+    </strong><br>
+    <h3 style="text-align: center;">Car care and maintenace can be a hefty affair with working weekdays and busy
+      weekends. We have <br> partnered with India’s best car servicing partners to fix your car.
+    </h3>
+  </div>
+
+  <div>
+    <img style="margin-top: 100px; margin-left: 900px; height: 350px; width: 400px;"
+      src="../static/images/oil change.jpg" alt="">
+  </div>
+
+  <div style="margin-top: -320px; margin-left: -900px;">
+    <strong>
+      <h3
+        style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;color: rgb(2, 63, 112); ">
+        <u>GARAGE SERVICES</u>
+      </h3>
+    </strong><br>
+    <h5 style="text-align: center;">For the fixes that require major overhauls or heavy <br> equipments, our
+      partners offer in-garage services from <br> top qualified experts, all this with industry-best offers. <br>
+      <span><img style="height: 11px; width: 11px;" src="../static/images/tick.png" alt=""></span> Exciting offers
+      and competitive pricing<br>
+      <span><img style="height: 11px; width: 11px;" src="../static/images/tick.png" alt=""></span>Qualified service
+      experts<br>
+      <span><img style="height: 11px; width: 11px;" src="../static/images/tick.png" alt=""></span>Highly rated
+      garages <br>
+    </h5>
+  </div>
+
+
+
+
+
+  <div>
+    <img style="margin-top: 200px; margin-left: 100px; height: 350px; width: 400px;" src="../static/images/spare.jpg"
+      alt="">
+  </div>
+
+  <div style="margin-top: -300px; margin-left: 730px;">
+    <strong>
+      <h3
+        style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;color: rgb(2, 63, 112); ">
+        <u>Genuine Spare Parts</u>
+      </h3>
+    </strong><br>
+    <h5 style="text-align: center;">Our partners offer genuine spare parts at very attractive <br> prices. Your car
+      gets the care it truly deserves. Equip<br>your cars with only trusted spare parts. <br>
+      <span><img style="height: 11px; width: 11px;" src="../static/images/tick.png" alt=""></span>Improve your car
+      performance<br>
+      <span><img style="height: 11px; width: 11px;" src="../static/images/tick.png" alt=""></span>Genuine &
+      certified spares<br>
+      <span><img style="height: 11px; width: 11px;" src="../static/images/tick.png" alt=""></span>Serviced by
+      qualified experts<br>
+    </h5>
+  </div>
+
+</div>
+<hr>
+
+
+<div style="height: 555px; background-color:rgb(56, 55, 55)">
+
+  <div style="height: 0px; width: 0px; margin-top: 0px; margin-left: 0px;">
+    <img src="../static/images/garage h.jpg" style="margin-top: 57px; margin-left: 50px; height: 80px; width: 240px;"
+      alt="">
+  </div>
+
+  <div style="font-family: Circular-Std-Bold;">
+
+
+    <div style="margin-top: 47px; margin-left: 620px; color: white;">
+      <h2 style="margin-left: 0px; margin-top: 0px;">About Us</h2>
+      <h6>
+        Team <br> Blog <br> Contact Us <br> Chat With Us
+      </h6>
+    </div>
+
+
+    <div style="margin-top: -136px; margin-left: 910px; color: white;">
+      <h2 style="margin-left: 0px; margin-top: 0px;">Services</h2>
+      <h6>Periodic service <br> Car Wash <br> Wheel Allignment <br> Car Polish <br> Ceramic Coating</h6>
+    </div>
+
+    <div style="margin-top: -148px; margin-left: 1180px; color: white;">
+      <h2 style="margin-left: 0px; margin-top: 0px;">Cities</h2>
+      <h6>Kerala <br> Ahmedabad<br>Bangalore<br>Chennai<br>Delhi
+        NCR<br>Gurgaon<br>Hyderabad<br>Kolkata<br>Mumbai<br>Pune</h6>
+    </div>
+  </div>
+
+
+
+
+  <div>
+    <h3 style="margin-top: 18px; margin-left: 104px; color: white;">Follow US</h3>
+
+
+    <div id="contact" style="padding: 5px; margin-top: 5px; margin-left: 62px;">
+
+
+      <a href=""><i class="fa-brands fa-facebook fa-2x " style="color: #fdfcfc; "></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a href=""> <i class="fa-brands fa-instagram fa-2x" style="color: #fffcfc;"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a href=""><i class="fa-brands fa-whatsapp fa-2x" style="color: #f8f5f5;"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a href=""><i class="fa-brands fa-youtube   fa-2x" style="color: #f8f5f5;"></i></a>
+
+    </div>
+
+    <div style="margin-top: 65px; margin-left: 65px;">
+      <a style="color: white;" href="">Terms&Conditions&nbsp;|&nbsp;</a>
+      <a style="color: white;" href="/privacy-policy">Privacy Policy&nbsp;</a>
+    </div>
+
+    <div style="margin-top: 12px; margin-left: 64px;">
+      <p style="color: white;">
+        © Humble Mobile Solutions Pvt. Ltd. All Rights Reserved <br>
+        112, 17th Main Rd, 5th Block, Koramangala, Bengaluru, Bengaluru Urban, Karnataka 560095. All Rights
+        Reserved.
+      </p>
+    </div>
+
+    <div style="margin-top: -162px; margin-left: 1313px; ">
+      <a href=""><i class="fa-solid fa-wrench  fa-8x" style="color: #f8f5f5;"></i></a>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+{% endblock nav %}

@@ -1,0 +1,21 @@
+{%  extends 'navbar.html' %}
+{%  block nav %}
+
+
+<form action="" method="post">
+    {% csrf_token %}
+
+    <label for="">phone No:</label><br>
+    <input name="phn" type="number"><br>
+    <label for="">Enter Your Address</label><br>
+    <input type="text" name="add" id=""><br>
+    <label for="">Enter your Fuel-Type:</label><br>
+    <input type="text" name="ftype">
+
+    <button class="btn btn success" >Confirm Booking</button>
+</form>
+
+
+
+
+{%  endblock nav %}

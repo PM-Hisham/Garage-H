@@ -1,0 +1,163 @@
+{% extends 'navbar.html' %}
+{% block nav %}
+
+<div style="height: 500px; background-color: white;">
+  <h1 style="font-size:60px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 170px; margin-left: 100px;"> Amazing deals for <br> doorstep car servicing <br> now at your fingertips.</h1>
+ 
+  <div>
+    <img src="../static/images/auto s.jpg" style="margin-top: -300px; margin-left: 790px; height: 500px; width: 700px;" alt="">
+  </div>
+</div><br><br><br><hr><br><br>
+<div>
+ <strong> <h1 style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; " >OUR SERVICES</h1></strong>
+ <h3 style="text-align: center;">Experience the BEST service for your car on your finger tip <br>By just one click </h3>
+</div>
+
+<div style="height: 650px;">
+  <div>
+    <img src="../static/images/service logo.png" style="margin-top: 210px; margin-left: 230px; height: 200px; width: 150px;" alt="">
+    <h3 style="margin-left: 170px;">PERIODIC SERVICE</h3>
+  </div>
+
+  <div>
+    <img src="../static/images/car wash logo.png"style="margin-top: -330px; margin-left: 550px; height: 200px; width: 150px;" alt="">
+    <h3 style="margin-left: 550px; margin-top: -70px;">CAR WASH</h3>
+  </div>
+
+  <div>
+    <img src="../static/images/wheel algn logo.png" style="margin-top: -330px; margin-left: 880px; height: 135px; width: 150px;" alt="">
+    <h3 style="margin-left: 820px; margin-top: -75px;">WHEEL ALLIGNMENT</h3>
+  </div>
+
+  <div>
+    <img src="../static/images/car polish logo.png" style="margin-top: -345px; margin-left: 1200px; height: 150px; width: 150px;"  alt="{%url 'polish'%}">
+     <a href=""><h3 style="margin-top: -85px; margin-left: 1190px;">CAR POLISH</h3></a> 
+  </div>
+
+</div><hr>
+
+<div>
+  <strong> <h1 style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; " >Services we Providing Are</h1></strong>
+  <h3 style="text-align: center;">Car care and maintenace can be a hefty affair with working weekdays and busy weekends. We have <br> partnered with India’s best car servicing partners to fix your car.
+  </h3>
+ </div>
+
+<div id="mob" style="background-color: white; margin-left: 18px; margin-right: 0px;"
+  class="row text-center">
+  {% for i in service %}
+
+
+  <div
+    style="width: 700px;background: rgb(2,68,79);
+    background: linear-gradient(90deg, rgba(2,68,79,0.8240546218487395) 27%, rgba(0,153,185,1) 66%);; margin-top: 66px; margin-left: 10px; left: 50px; box-shadow: 0 0 10 10 black;"
+    class="card text-center" style="width: 18rem;">
+    <img style="width: 274px; margin-left: 53px; height: 350px; margin-top: 37px;  " class="card-img-top" height="200px"
+      width="150px" src="{{i.image.url}}" alt="Card image cap"></a>
+      <a class="btn btn-danger" style="width: 100px;" href="{% url 'dt' i.id %}">Book</a>
+      
+    <div class="card-body">
+      
+      <p style="color: rgb(12, 8, 8);" class="card-text">{{data.category}}</p>
+      <div style="margin-left: 340px; margin-top: -368px; width: 300px ;">
+        <h5 style="color: rgb(18, 18, 18);" class="card-title">{{i.name}}</h5><br><br>
+        <p style="color: rgb(18, 17, 17);" class="card-text">{{i.description}}</p><br><br>
+     
+
+        
+        
+  
+      </div>
+  
+    </div>
+   
+  </div>
+
+
+  {% endfor %}
+ <!-- <div style="margin-left: 500px; margin-top: -494px; height: 0px; width: 170px;"><a class="btn btn-info" href="{%url 'cwash'%}">Book Your Slot</a></div>
+ <div style="margin-left: 500px; margin-top: 2px; height: 0px; width: 170px;"> <a class="btn btn-info" href="{%url 'wheel'%}">Book Your Slot</a></div>
+ <div style="margin-left: 500px; margin-top: 1px; height: 0px; width: 170px;"> <a  class="btn btn-info" href="{%url 'polish'%}">Book Your Slot</a></div> -->
+
+</div><br><br><br><br><hr>
+<div style="height: 555px; background-color:rgb(56, 55, 55)">
+    
+    <div style="height: 0px; width: 0px; margin-top: 0px; margin-left: 0px;" >
+      <img src="../static/images/garage h.jpg" style="margin-top: 57px; margin-left: 50px; height: 80px; width: 240px;" alt="">
+    </div>
+
+  <div style="font-family: Circular-Std-Bold;">
+
+
+    <div style="margin-top: 47px; margin-left: 620px; color: white;"> 
+      <h2 style="margin-left: 0px; margin-top: 0px;">About Us</h2>
+      <h6>
+        Team <br> Blog <br> Contact Us <br> Chat With Us
+      </h6>
+    </div>
+    
+    
+    <div style="margin-top: -136px; margin-left: 910px; color: white;">
+      <h2 style="margin-left: 0px; margin-top: 0px;">Services</h2>
+      <h6>Periodic service <br> Car Wash <br> Wheel Allignment <br> Car Polish <br> Ceramic Coating</h6>
+    </div>
+    
+    <div style="margin-top: -148px; margin-left: 1180px; color: white;"> 
+      <h2 style="margin-left: 0px; margin-top: 0px;">Cities</h2>
+      <h6>Kerala <br> Ahmedabad<br>Bangalore<br>Chennai<br>Delhi NCR<br>Gurgaon<br>Hyderabad<br>Kolkata<br>Mumbai<br>Pune</h6>
+    </div>
+  </div>
+
+
+
+
+    <div>
+      <h3 style="margin-top: 18px; margin-left: 104px; color: white;">Follow US</h3>
+
+
+      <div id="contact" style="padding: 5px; margin-top: 5px; margin-left: 62px;">
+
+
+        <a href=""><i class="fa-brands fa-facebook fa-2x "
+            style="color: #fdfcfc; "></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+  
+        <a href=""> <i class="fa-brands fa-instagram fa-2x"
+            style="color: #fffcfc;"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+  
+        <a href=""><i class="fa-brands fa-whatsapp fa-2x" style="color: #f8f5f5;"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+  
+        <a href=""><i class="fa-brands fa-youtube   fa-2x"  style="color: #f8f5f5;" ></i></a>
+  
+      </div>
+
+      <div style="margin-top: 65px; margin-left: 65px;">
+        <a style="color: white;" href="">Terms&Conditions&nbsp;|&nbsp;</a>
+        <a style="color: white;"  href="/privacy-policy">Privacy Policy&nbsp;</a>
+      </div>
+
+      <div style="margin-top: 12px; margin-left: 64px;">
+        <p style="color: white;">
+          © Humble Mobile Solutions Pvt. Ltd. All Rights Reserved <br>
+           112, 17th Main Rd, 5th Block, Koramangala, Bengaluru, Bengaluru Urban, Karnataka 560095. All Rights Reserved.
+        </p>
+      </div>
+
+      <div style="margin-top: -162px; margin-left: 1313px; ">
+        <a href=""><i class="fa-solid fa-wrench  fa-8x"  style="color: #f8f5f5;" ></i></a>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+    
+
+</div>
+
+
+{% endblock nav %}

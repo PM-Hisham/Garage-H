@@ -1,0 +1,14 @@
+{% extends 'navbar.html' %}
+{%  block nav %}
+
+
+    <img style="height: 300px; width: 400px;" src="{{data.image.url}}" alt="">
+    <h1>{{data.name}}</h1>
+    <h3>{{data.description}}</h3>
+    <a class="btn btn-success text-center" href="{% url 'userd' data.id %}">book</a>
+
+
+
+
+
+{%  endblock nav %}
